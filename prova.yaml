@@ -40,22 +40,6 @@ paths:
             application/problem+json:
               schema:
                 $ref: '#/components/schemas/RispostaKO'
-  /prova:
-    get:
-      summary: Expectation di prova
-      description: |
-        Returns the application status. For testing purposes, it might randomly reply with an error.
-      operationId: prova
-      tags:
-        - Expectation di prova
-      responses:
-        '200':
-          description: |
-            Valid.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/RispostaProva'
   /anpr-service-e002:
     post:
       tags:
@@ -136,11 +120,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/TipoErroriAnomalia'
-    RispostaProva:
-      type: object
-      properties:
-        prova:
-          type: string
     TipoAltraLingua:
       type: object
       properties:
