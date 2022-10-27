@@ -1,4 +1,5 @@
-[{
+[
+  {
     "httpRequest": {
         "method": "POST",
         "path": "/anpr-service-e002",
@@ -1113,424 +1114,419 @@
     }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/anpr-service-e002",
-        "body": {
-            "type": "JSON",
-            "json": {
-                "criteriRicerca": {
-                    "codiceFiscale": "TRSLNN22C61Z614M"
-                },
-                "testataRichiesta": {
-                    "idOperazioneClient": "10",
-                    "codMittente": "600010",
-                    "codDestinatario": "ANPR02",
-                    "operazioneRichiesta": "E002",
-                    "dataOraRichiesta": "2022-08-13T10:03:09.366+01:00",
-                    "tipoOperazione": "C",
-                    "tipoInvio": "TEST",
-                    "dataDecorrenza": "2022-08-13"
-                },
-                "datiRichiesta": {
-                    "schedaAnagraficaRichiesta": "1",
-                    "dataRiferimentoRichiesta": "2022-08-13",
-                    "datiAnagraficiRichiesti": [
-                        "1"
-                    ],
-                    "motivoRichiesta": "WUMJ-QZTE-PYRW-202210-G-1_0_ANALOG_SEND_ATTEMPT_1_public_registry_call",
-                    "casoUso": "C001"
-                }
-            },
-            "matchType": "STRICT"
-        }
-    },
-    "httpResponse": {
-        "statusCode": 404,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "listaErrori": [
-                    {
-                        "codiceErroreAnomalia": "EN122",
-                        "testoErroreAnomalia": "La richiesta effettuata non produce alcun risultato",
-                        "tipoErroreAnomalia": "E"
-                    }
-                ],
-                "testataRisposta": {
-                    "codDestinatario": "ANPR02",
-                    "codMittente": "600010",
-                    "dataOraRichiesta": "2022-10-21T10:15:20",
-                    "esitoOperazione": "XXXX",
-                    "idOperazioneANPR": "54472752",
-                    "idOperazioneClient": "3891448664431500",
-                    "operazioneRichiesta": "E002"
-                }
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/anpr-service-e002",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "criteriRicerca": {
+                  "codiceFiscale": "TRSLNN22C61Z614M"
+              },
+              "testataRichiesta": {
+                  "idOperazioneClient": "10",
+                  "codMittente": "600010",
+                  "codDestinatario": "ANPR02",
+                  "operazioneRichiesta": "E002",
+                  "dataOraRichiesta": "2022-08-13T10:03:09.366+01:00",
+                  "tipoOperazione": "C",
+                  "tipoInvio": "TEST",
+                  "dataDecorrenza": "2022-08-13"
+              },
+              "datiRichiesta": {
+                  "schedaAnagraficaRichiesta": "1",
+                  "dataRiferimentoRichiesta": "2022-08-13",
+                  "datiAnagraficiRichiesti": [
+                      "1"
+                  ],
+                  "motivoRichiesta": "WUMJ-QZTE-PYRW-202210-G-1_0_ANALOG_SEND_ATTEMPT_1_public_registry_call",
+                  "casoUso": "C001"
+              }
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 404,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "listaErrori": [
+                  {
+                      "codiceErroreAnomalia": "EN122",
+                      "testoErroreAnomalia": "La richiesta effettuata non produce alcun risultato",
+                      "tipoErroreAnomalia": "E"
+                  }
+              ],
+              "testataRisposta": {
+                  "codDestinatario": "ANPR02",
+                  "codMittente": "600010",
+                  "dataOraRichiesta": "2022-10-21T10:15:20",
+                  "esitoOperazione": "XXXX",
+                  "idOperazioneANPR": "54472752",
+                  "idOperazioneClient": "3891448664431500",
+                  "operazioneRichiesta": "E002"
+              }
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/anpr-service-e002",
-        "body": {
-            "type": "JSON",
-            "json": {
-                "criteriRicerca": {
-                    "codiceFiscale": "LLBAFR22C61Z614M"
-                },
-                "testataRichiesta": {
-                    "idOperazioneClient": "10",
-                    "codMittente": "600010",
-                    "codDestinatario": "ANPR02",
-                    "operazioneRichiesta": "E002",
-                    "dataOraRichiesta": "2022-08-13T10:03:09.366+01:00",
-                    "tipoOperazione": "C",
-                    "tipoInvio": "TEST",
-                    "dataDecorrenza": "2022-08-13"
-                },
-                "datiRichiesta": {
-                    "schedaAnagraficaRichiesta": "1",
-                    "dataRiferimentoRichiesta": "2022-08-13",
-                    "datiAnagraficiRichiesti": [
-                        "1"
-                    ],
-                    "motivoRichiesta": "WUMJ-QZTE-PYRW-202210-G-1_0_ANALOG_SEND_ATTEMPT_1_public_registry_call",
-                    "casoUso": "C001"
-                }
-            },
-            "matchType": "STRICT"
-        }
-    },
-    "httpResponse": {
-        "statusCode": 500,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "listaErrori": [
-                    {
-                        "codiceErroreAnomalia": "EN122",
-                        "testoErroreAnomalia": "Internal server error",
-                        "tipoErroreAnomalia": "E"
-                    }
-                ],
-                "testataRisposta": {
-                    "codDestinatario": "ANPR02",
-                    "codMittente": "600010",
-                    "dataOraRichiesta": "2022-10-21T10:15:20",
-                    "esitoOperazione": "XXXX",
-                    "idOperazioneANPR": "54472752",
-                    "idOperazioneClient": "3891448664431500",
-                    "operazioneRichiesta": "E002"
-                }
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/anpr-service-e002",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "criteriRicerca": {
+                  "codiceFiscale": "LLBAFR22C61Z614M"
+              },
+              "testataRichiesta": {
+                  "idOperazioneClient": "10",
+                  "codMittente": "600010",
+                  "codDestinatario": "ANPR02",
+                  "operazioneRichiesta": "E002",
+                  "dataOraRichiesta": "2022-08-13T10:03:09.366+01:00",
+                  "tipoOperazione": "C",
+                  "tipoInvio": "TEST",
+                  "dataDecorrenza": "2022-08-13"
+              },
+              "datiRichiesta": {
+                  "schedaAnagraficaRichiesta": "1",
+                  "dataRiferimentoRichiesta": "2022-08-13",
+                  "datiAnagraficiRichiesti": [
+                      "1"
+                  ],
+                  "motivoRichiesta": "WUMJ-QZTE-PYRW-202210-G-1_0_ANALOG_SEND_ATTEMPT_1_public_registry_call",
+                  "casoUso": "C001"
+              }
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 500,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "listaErrori": [
+                  {
+                      "codiceErroreAnomalia": "EN122",
+                      "testoErroreAnomalia": "Internal server error",
+                      "tipoErroreAnomalia": "E"
+                  }
+              ],
+              "testataRisposta": {
+                  "codDestinatario": "ANPR02",
+                  "codMittente": "600010",
+                  "dataOraRichiesta": "2022-10-21T10:15:20",
+                  "esitoOperazione": "XXXX",
+                  "idOperazioneANPR": "54472752",
+                  "idOperazioneClient": "3891448664431500",
+                  "operazioneRichiesta": "E002"
+              }
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/anpr-service-e002",
-        "body": {
-            "type": "REGEX",
-            "regex": ".*"
-        }
-    },
-    "httpResponse": {
-        "statusCode": 400,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "listaErrori": [
-                    {
-                        "codiceErroreAnomalia": "EN122",
-                        "testoErroreAnomalia": "Bad request",
-                        "tipoErroreAnomalia": "E"
-                    }
-                ],
-                "testataRisposta": {
-                    "codDestinatario": "ANPR02",
-                    "codMittente": "600010",
-                    "dataOraRichiesta": "2022-10-21T10:15:20",
-                    "esitoOperazione": "XXXX",
-                    "idOperazioneANPR": "54472752",
-                    "idOperazioneClient": "3891448664431500",
-                    "operazioneRichiesta": "E002"
-                }
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/anpr-service-e002",
+      "body": {
+          "type": "REGEX",
+          "regex": ".*"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 400,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "listaErrori": [
+                  {
+                      "codiceErroreAnomalia": "EN122",
+                      "testoErroreAnomalia": "Bad request",
+                      "tipoErroreAnomalia": "E"
+                  }
+              ],
+              "testataRisposta": {
+                  "codDestinatario": "ANPR02",
+                  "codMittente": "600010",
+                  "dataOraRichiesta": "2022-10-21T10:15:20",
+                  "esitoOperazione": "XXXX",
+                  "idOperazioneANPR": "54472752",
+                  "idOperazioneClient": "3891448664431500",
+                  "operazioneRichiesta": "E002"
+              }
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/verifica",
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codiceFiscale": "AAAZZZ00H00T000Z"
-            },
-            "matchType": "STRICT"
-        }
-    },
-    "httpResponse": {
-        "statusCode": 200,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codiceFiscale": "AAAZZZ00H00T000Z",
-                "valido": true,
-                "messaggio": "Codice fiscale valido"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/verifica",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "AAAZZZ00H00T000Z"
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 200,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "AAAZZZ00H00T000Z",
+              "valido": true,
+              "messaggio": "Codice fiscale valido"
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/verifica",
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codiceFiscale": "BBBYYY00H00T000Z"
-            },
-            "matchType": "STRICT"
-        }
-    },
-    "httpResponse": {
-        "statusCode": 200,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codiceFiscale": "BBBYYY00H00T000Z",
-                "valido": true,
-                "messaggio": "Codice fiscale valido, non più utilizzabile in quanto aggiornato in altro codice fiscale"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/verifica",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "BBBYYY00H00T000Z"
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 200,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "BBBYYY00H00T000Z",
+              "valido": true,
+              "messaggio": "Codice fiscale valido, non più utilizzabile in quanto aggiornato in altro codice fiscale"
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/verifica",
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codiceFiscale": "CCCXXX00H00T000Z"
-            },
-            "matchType": "STRICT"
-        }
-    },
-    "httpResponse": {
-        "statusCode": 200,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codiceFiscale": "CCCXXX00H00T000Z",
-                "valido": false,
-                "messaggio": "Codice fiscale non utilizzabile in quanto aggiornato in altro codice fiscale"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/verifica",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "CCCXXX00H00T000Z"
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 200,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "CCCXXX00H00T000Z",
+              "valido": false,
+              "messaggio": "Codice fiscale non utilizzabile in quanto aggiornato in altro codice fiscale"
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/verifica",
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codiceFiscale": "DDDWWW00H00T000Z"
-            },
-            "matchType": "STRICT"
-        }
-    },
-    "httpResponse": {
-        "statusCode": 200,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codiceFiscale": "AAAZZZ00H00T000Z",
-                "valido": false,
-                "messaggio": "Codice fiscale non valido"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/verifica",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "DDDWWW00H00T000Z"
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 200,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "DDDWWW00H00T000Z",
+              "valido": false,
+              "messaggio": "Codice fiscale non valido"
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/verifica",
-        "body": {
-            "type": "REGEX",
-            "regex": ".*"
-        }
-    },
-    "httpResponse": {
-        "statusCode": 400,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "messaggio": "Bad request"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/verifica",
+      "body": {
+          "type": "REGEX",
+          "regex": ".*"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 400,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "messaggio": "Bad request"
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/extract/RRANGL74M28R701V",
-        "queryStringParameters": {
-            "practicalReference": ["abc123"]
-        }
-    },
-    "httpResponse": {
-        "statusCode": 200,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "codice_fiscale": "RRANGL74M28R701V",
-                "since": "2017-07-21T17:32:28Z",
-                "digitalAddress": [
-                    {
-                        "digitalAddress": "example@pec.it",
-                        "practicedProfession": "Avvocato",
-                        "usageInfo": {
-                            "motivazione": "CESSAZIONE_VOLONTARIA",
-                            "dateEndValidity": "2017-07-21T17:32:28Z"
-                        }
-                    }
-                ]
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/extract/.*",
+      "queryStringParameters": {
+          "practicalReference": [
+              "abc123"
+          ]
+      }
+  },
+  "httpResponseTemplate": {
+      "templateType": "VELOCITY",
+      "template": "{ \"statusCode\": 200, \"body\": {codice_fiscale: \"$!request.path.split(\"/\", 0)[2]\", since: \"$!date.iso\", digitalAddress: [
+                  {
+                      digitalAddress: \"example@pec.it\",
+                      practicedProfession: \"Avvocato\",
+                      usageInfo: {
+                          motivazione: \"CESSAZIONE_VOLONTARIA\",
+                          dateEndValidity: \"$!date.iso\"
+                      }
+                  }
+              ]}}"
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/extract/EDFTRT74M28R701V",
-        "queryStringParameters": {
-            "practicalReference": [
-                "abc123"
-            ]
-        }
-    },
-    "httpResponse": {
-        "statusCode": 401,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "status": "401",
-                "type": "Unauthorized",
-                "detail": "<detail_error>"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/extract/.*",
+      "queryStringParameters": {
+          "practicalReference": [
+              "def123"
+          ]
+      }
+  },
+  "httpResponse": {
+      "statusCode": 401,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "status": "401",
+              "type": "Unauthorized",
+              "detail": "<detail_error>"
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/extract/EDFTRT74M28R701V",
-        "queryStringParameters": {
-            "practicalReference": [
-                "def456"
-            ]
-        }
-    },
-    "httpResponse": {
-        "statusCode": 403,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "status": "403",
-                "type": "Forbidden",
-                "detail": "<detail_error>"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/extract/.*",
+      "queryStringParameters": {
+          "practicalReference": [
+              "ghi123"
+          ]
+      }
+  },
+  "httpResponse": {
+      "statusCode": 403,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "status": "403",
+              "type": "Forbidden",
+              "detail": "<detail_error>"
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/extract/EDFTRT74M28R701V",
-        "queryStringParameters": {
-            "practicalReference": [
-                "ggg123"
-            ]
-        }
-    },
-    "httpResponse": {
-        "statusCode": 404,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "status": "404",
-                "type": "Not found",
-                "detail": "<detail_error>"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/extract/.*",
+      "queryStringParameters": {
+          "practicalReference": [
+              "jkl123"
+          ]
+      }
+  },
+  "httpResponse": {
+      "statusCode": 404,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "status": "404",
+              "type": "Not found",
+              "detail": "<detail_error>"
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/extract/ALMNTT74M28R701V",
-        "queryStringParameters": {
-            "practicalReference": [
-                "abc123"
-            ]
-        }
-    },
-    "httpResponse": {
-        "statusCode": 500,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "status": "500",
-                "type": "Internal server error",
-                "detail": "<detail_error>"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/extract/.*",
+      "queryStringParameters": {
+          "practicalReference": [
+              "mno123"
+          ]
+      }
+  },
+  "httpResponse": {
+      "statusCode": 500,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "status": "500",
+              "type": "Internal server error",
+              "detail": "<detail_error>"
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/extract/ALMNTT74M28R701V",
-        "queryStringParameters": {
-            "practicalReference": [
-                "xyz098"
-            ]
-        }
-    },
-    "httpResponse": {
-        "statusCode": 503,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "status": "503",
-                "type": "Service unavailable",
-                "detail": "<detail_error>"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/extract/.*",
+      "queryStringParameters": {
+          "practicalReference": [
+              "pqr123"
+          ]
+      }
+  },
+  "httpResponse": {
+      "statusCode": 503,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "status": "503",
+              "type": "Service unavailable",
+              "detail": "<detail_error>"
+          }
+      }
+  }
 },
 {
-    "httpRequest": {
-        "method": "POST",
-        "path": "/extract/.*"
-    },
-    "httpResponse": {
-        "statusCode": 400,
-        "body": {
-            "type": "JSON",
-            "json": {
-                "status": "400",
-                "type": "Bad request",
-                "detail": "<detail_error>"
-            }
-        }
-    }
+  "httpRequest": {
+      "method": "POST",
+      "path": "/extract/.*"
+  },
+  "httpResponse": {
+      "statusCode": 400,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "status": "400",
+              "type": "Bad request",
+              "detail": "<detail_error>"
+          }
+      }
+  }
 }
 ]
