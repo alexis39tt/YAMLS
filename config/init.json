@@ -7,29 +7,9 @@
             "type": "JSON",
             "json": {
                 "criteriRicerca": {
-                    "codiceFiscale": "DSSSRL22C61Z614M"
-                },
-                "testataRichiesta": {
-                    "idOperazioneClient": "10",
-                    "codMittente": "600010",
-                    "codDestinatario": "ANPR02",
-                    "operazioneRichiesta": "E002",
-                    "dataOraRichiesta": "2022-08-13T10:03:09.366+01:00",
-                    "tipoOperazione": "C",
-                    "tipoInvio": "TEST",
-                    "dataDecorrenza": "2022-08-13"
-                },
-                "datiRichiesta": {
-                    "schedaAnagraficaRichiesta": "1",
-                    "dataRiferimentoRichiesta": "2022-08-13",
-                    "datiAnagraficiRichiesti": [
-                        "1"
-                    ],
-                    "motivoRichiesta": "WUMJ-QZTE-PYRW-202210-G-1_0_ANALOG_SEND_ATTEMPT_1_public_registry_call",
-                    "casoUso": "C001"
+                    "codiceFiscale": "AAAAAA22C61Z614M"
                 }
-            },
-            "matchType": "STRICT"
+            }
         }
     },
     "httpResponse": {
@@ -1121,41 +1101,21 @@
           "type": "JSON",
           "json": {
               "criteriRicerca": {
-                  "codiceFiscale": "TRSLNN22C61Z614M"
-              },
-              "testataRichiesta": {
-                  "idOperazioneClient": "10",
-                  "codMittente": "600010",
-                  "codDestinatario": "ANPR02",
-                  "operazioneRichiesta": "E002",
-                  "dataOraRichiesta": "2022-08-13T10:03:09.366+01:00",
-                  "tipoOperazione": "C",
-                  "tipoInvio": "TEST",
-                  "dataDecorrenza": "2022-08-13"
-              },
-              "datiRichiesta": {
-                  "schedaAnagraficaRichiesta": "1",
-                  "dataRiferimentoRichiesta": "2022-08-13",
-                  "datiAnagraficiRichiesti": [
-                      "1"
-                  ],
-                  "motivoRichiesta": "WUMJ-QZTE-PYRW-202210-G-1_0_ANALOG_SEND_ATTEMPT_1_public_registry_call",
-                  "casoUso": "C001"
+                  "codiceFiscale": "BBBBBB22C61Z614M"
               }
-          },
-          "matchType": "STRICT"
+          }
       }
   },
   "httpResponse": {
-      "statusCode": 404,
+      "statusCode": 401,
       "body": {
           "type": "JSON",
           "json": {
               "listaErrori": [
                   {
                       "codiceErroreAnomalia": "EN122",
-                      "testoErroreAnomalia": "La richiesta effettuata non produce alcun risultato",
-                      "tipoErroreAnomalia": "E"
+                      "testoErroreAnomalia": "Unauthorized",
+                      "tipoErroreAnomalia": "401"
                   }
               ],
               "testataRisposta": {
@@ -1179,29 +1139,85 @@
           "type": "JSON",
           "json": {
               "criteriRicerca": {
-                  "codiceFiscale": "LLBAFR22C61Z614M"
-              },
-              "testataRichiesta": {
-                  "idOperazioneClient": "10",
-                  "codMittente": "600010",
-                  "codDestinatario": "ANPR02",
-                  "operazioneRichiesta": "E002",
-                  "dataOraRichiesta": "2022-08-13T10:03:09.366+01:00",
-                  "tipoOperazione": "C",
-                  "tipoInvio": "TEST",
-                  "dataDecorrenza": "2022-08-13"
-              },
-              "datiRichiesta": {
-                  "schedaAnagraficaRichiesta": "1",
-                  "dataRiferimentoRichiesta": "2022-08-13",
-                  "datiAnagraficiRichiesti": [
-                      "1"
-                  ],
-                  "motivoRichiesta": "WUMJ-QZTE-PYRW-202210-G-1_0_ANALOG_SEND_ATTEMPT_1_public_registry_call",
-                  "casoUso": "C001"
+                  "codiceFiscale": "CCCCCC22C61Z614M"
               }
-          },
-          "matchType": "STRICT"
+          }
+      }
+  },
+  "httpResponse": {
+      "statusCode": 403,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "listaErrori": [
+                  {
+                      "codiceErroreAnomalia": "EN122",
+                      "testoErroreAnomalia": "Forbidden",
+                      "tipoErroreAnomalia": "403"
+                  }
+              ],
+              "testataRisposta": {
+                  "codDestinatario": "ANPR02",
+                  "codMittente": "600010",
+                  "dataOraRichiesta": "2022-10-21T10:15:20",
+                  "esitoOperazione": "XXXX",
+                  "idOperazioneANPR": "54472752",
+                  "idOperazioneClient": "3891448664431500",
+                  "operazioneRichiesta": "E002"
+              }
+          }
+      }
+  }
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path": "/anpr-service-e002",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "criteriRicerca": {
+                  "codiceFiscale": "DDDDDD22C61Z614M"
+              }
+          }
+      }
+  },
+  "httpResponse": {
+      "statusCode": 404,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "listaErrori": [
+                  {
+                      "codiceErroreAnomalia": "EN122",
+                      "testoErroreAnomalia": "Not found",
+                      "tipoErroreAnomalia": "404"
+                  }
+              ],
+              "testataRisposta": {
+                  "codDestinatario": "ANPR02",
+                  "codMittente": "600010",
+                  "dataOraRichiesta": "2022-10-21T10:15:20",
+                  "esitoOperazione": "XXXX",
+                  "idOperazioneANPR": "54472752",
+                  "idOperazioneClient": "3891448664431500",
+                  "operazioneRichiesta": "E002"
+              }
+          }
+      }
+  }
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path": "/anpr-service-e002",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "criteriRicerca": {
+                  "codiceFiscale": "EEEEEE22C61Z614M"
+              }
+          }
       }
   },
   "httpResponse": {
@@ -1213,7 +1229,45 @@
                   {
                       "codiceErroreAnomalia": "EN122",
                       "testoErroreAnomalia": "Internal server error",
-                      "tipoErroreAnomalia": "E"
+                      "tipoErroreAnomalia": "500"
+                  }
+              ],
+              "testataRisposta": {
+                  "codDestinatario": "ANPR02",
+                  "codMittente": "600010",
+                  "dataOraRichiesta": "2022-10-21T10:15:20",
+                  "esitoOperazione": "XXXX",
+                  "idOperazioneANPR": "54472752",
+                  "idOperazioneClient": "3891448664431500",
+                  "operazioneRichiesta": "E002"
+              }
+          }
+      }
+  }
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path": "/anpr-service-e002",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "criteriRicerca": {
+                  "codiceFiscale": "FFFFFF22C61Z614M"
+              }
+          }
+      }
+  },
+  "httpResponse": {
+      "statusCode": 503,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "listaErrori": [
+                  {
+                      "codiceErroreAnomalia": "EN122",
+                      "testoErroreAnomalia": "Service unavailable",
+                      "tipoErroreAnomalia": "503"
                   }
               ],
               "testataRisposta": {
@@ -1247,7 +1301,7 @@
                   {
                       "codiceErroreAnomalia": "EN122",
                       "testoErroreAnomalia": "Bad request",
-                      "tipoErroreAnomalia": "E"
+                      "tipoErroreAnomalia": "400"
                   }
               ],
               "testataRisposta": {
@@ -1264,28 +1318,28 @@
   }
 },
 {
-  "httpRequest": {
-      "method": "POST",
-      "path": "/verifica",
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "AAAZZZ00H00T000Z"
-          },
-          "matchType": "STRICT"
-      }
-  },
-  "httpResponse": {
-      "statusCode": 200,
-      "body": {
-          "type": "JSON",
-          "json": {
-              "codiceFiscale": "AAAZZZ00H00T000Z",
-              "valido": true,
-              "messaggio": "Codice fiscale valido"
-          }
-      }
-  }
+    "httpRequest": {
+        "method": "POST",
+        "path": "/verifica",
+        "body": {
+            "type": "JSON",
+            "json": {
+                "codiceFiscale": "AAAAAA00H00T000Z"
+            },
+            "matchType": "STRICT"
+        }
+    },
+    "httpResponse": {
+        "statusCode": 200,
+        "body": {
+            "type": "JSON",
+            "json": {
+                "codiceFiscale": "AAAAAA00H00T000Z",
+                "valido": true,
+                "messaggio": "Codice fiscale valido"
+            }
+        }
+    }
 },
 {
   "httpRequest": {
@@ -1294,7 +1348,7 @@
       "body": {
           "type": "JSON",
           "json": {
-              "codiceFiscale": "BBBYYY00H00T000Z"
+              "codiceFiscale": "BBBBBB00H00T000Z"
           },
           "matchType": "STRICT"
       }
@@ -1304,7 +1358,7 @@
       "body": {
           "type": "JSON",
           "json": {
-              "codiceFiscale": "BBBYYY00H00T000Z",
+              "codiceFiscale": "BBBBBB00H00T000Z",
               "valido": true,
               "messaggio": "Codice fiscale valido, non più utilizzabile in quanto aggiornato in altro codice fiscale"
           }
@@ -1318,7 +1372,7 @@
       "body": {
           "type": "JSON",
           "json": {
-              "codiceFiscale": "CCCXXX00H00T000Z"
+              "codiceFiscale": "CCCCCC00H00T000Z"
           },
           "matchType": "STRICT"
       }
@@ -1328,7 +1382,7 @@
       "body": {
           "type": "JSON",
           "json": {
-              "codiceFiscale": "CCCXXX00H00T000Z",
+              "codiceFiscale": "CCCCCC00H00T000Z",
               "valido": false,
               "messaggio": "Codice fiscale non utilizzabile in quanto aggiornato in altro codice fiscale"
           }
@@ -1342,7 +1396,7 @@
       "body": {
           "type": "JSON",
           "json": {
-              "codiceFiscale": "DDDWWW00H00T000Z"
+              "codiceFiscale": "DDDDDD00H00T000Z"
           },
           "matchType": "STRICT"
       }
@@ -1352,9 +1406,139 @@
       "body": {
           "type": "JSON",
           "json": {
-              "codiceFiscale": "DDDWWW00H00T000Z",
+              "codiceFiscale": "DDDDDD00H00T000Z",
               "valido": false,
               "messaggio": "Codice fiscale non valido"
+          }
+      }
+  }
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path": "/verifica",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "EEEEEE00H00T000Z"
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 401,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "detail": "Unauthorized",
+              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+              "status": 401,
+              "title": "Unauthorized. You have no authorization to access",
+              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
+          }
+      }
+  }
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path": "/verifica",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "FFFFFF00H00T000Z"
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 403,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "detail": "Forbidden",
+              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+              "status": 403,
+              "title": "Forbidden. The access is permanently forbidden",
+              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
+          }
+      }
+  }
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path": "/verifica",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "GGGGGG00H00T000Z"
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 404,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "detail": "Not found",
+              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+              "status": 404,
+              "title": "Not found. The content you were trying to retrieve was not found",
+              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
+          }
+      }
+  }
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path": "/verifica",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "HHHHHH00H00T000Z"
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 500,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "detail": "Internal server error",
+              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+              "status": 500,
+              "title": "Internal server error. There was a fatal error with the server",
+              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
+          }
+      }
+  }
+},
+{
+  "httpRequest": {
+      "method": "POST",
+      "path": "/verifica",
+      "body": {
+          "type": "JSON",
+          "json": {
+              "codiceFiscale": "IIIIII00H00T000Z"
+          },
+          "matchType": "STRICT"
+      }
+  },
+  "httpResponse": {
+      "statusCode": 503,
+      "body": {
+          "type": "JSON",
+          "json": {
+              "detail": "Service unavailable",
+              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+              "status": 503,
+              "title": "Service unavailable. The server was not able to handle the request",
+              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
           }
       }
   }
@@ -1373,7 +1557,11 @@
       "body": {
           "type": "JSON",
           "json": {
-              "messaggio": "Bad request"
+              "detail": "Bad request",
+              "instance": "https://pagopa.gov.it/ERROR_URI_IDENTIFIER",
+              "status": 400,
+              "title": "Bad request. Empty, missing or wrong arguments or path",
+              "type": "https://pagopa.gov.it/ERRORS_DOCUMENTATION_URI"
           }
       }
   }
